@@ -1,0 +1,78 @@
+.hero-background-icon {
+  width: 100%;
+  height: 38.063rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.frame-parent {
+  width: 82.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 7.437rem;
+  max-width: 100%;
+}
+.habot,
+.habot-inner {
+  display: flex;
+  box-sizing: border-box;
+}
+.habot-inner {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-xl);
+  max-width: 100%;
+}
+.habot {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-4xs);
+  gap: 7.75rem;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 1225px) {
+  .habot {
+    gap: 3.875rem;
+  }
+  .habot-inner{
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frame-parent {
+    gap: 3.688rem;
+  }
+  .habot {
+    gap: 1.938rem;
+  }
+  .habot-inner{
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frame-parent {
+    gap: var(--gap-11xl);
+  }
+  .habot-inner{
+    padding-top: 30%;
+  }
+  .habot {
+    gap: var(--gap-mini);
+  }
+}
